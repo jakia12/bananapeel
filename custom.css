@@ -1,0 +1,143 @@
+.main-banner {
+  background-image: none;
+  background-color: #191919;
+}
+
+p {
+  color: #f9f9f9 !important;
+}
+/* */
+
+.about-part {
+  background-color: #191919;
+}
+
+.service_sec {
+  background-color: #191919;
+}
+
+.services-box .frontend {
+  background: #f39c12;
+  padding: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.services-box .backend {
+  background: #f39c12;
+  padding: 30px;
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.token_sec,
+.team_sec {
+  background-color: #191919;
+}
+
+.road_sec {
+  background-color: #191919;
+}
+
+.faq_sec,
+.footer_bg {
+  background-color: #191919;
+}
+.wrapper_con {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+.accordion-box {
+  background: #f39c12;
+  padding: 25px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.contact-part .form-detail .form-control {
+  background: #f39c12;
+  border: none;
+  height: 50px;
+  color: #fff;
+  padding-left: 15px;
+}
+.heading-part > span {
+  color: #fedb41;
+  font-size: 20px;
+}
+.contact_sec {
+  background-color: #191919;
+}
+
+/*******animated card**********/
+:root {
+  --primary-color: #fedb41;
+  --bg-color: #111;
+  --text-color: white;
+}
+
+/* body{
+  background: var(--bg-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nunito Sans', sans-serif;
+} */
+
+.ft_card {
+  background: #111;
+  cursor: pointer;
+  border-radius: 15px;
+  position: relative;
+  padding: 25px 30px;
+  color: #fff;
+  height: 310px;
+  box-shadow: 0 0 16px #fedb4184;
+}
+
+.ft_card::after {
+  content: "";
+  background: #339e7d;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  clip-path: circle(16% at 0% 0%);
+  transition: all 0.3s ease-in;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in;
+}
+
+.ft_card:hover::after {
+  clip-path: circle(100%);
+}
+
+.ft_card:hover .content {
+  color: var(--text-color);
+}
